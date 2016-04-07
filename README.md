@@ -1,13 +1,5 @@
 # Шаблон проекта на Grunt
 
-Шаблон для начала работ над проектами
-
-## Перед началом работы
-
-Для работы шаблона необходимо установить `nodejs` (вместе с `npm`)
-
-- [Установка Nodejs](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager "Installing Node.js via package manager")
-
 ## Установка шаблона
 
 ``` sh
