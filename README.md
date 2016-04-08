@@ -3,7 +3,7 @@
 ## Установка шаблона
 
 ``` sh
-$ git clone https://github.com/tsergeytovarov/grunt-project.git project && cd project
+$ git clone https://github.com/rustamyusupov/grunt-project.git project && cd project
 $ npm i
 ```
 
