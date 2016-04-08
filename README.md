@@ -3,9 +3,8 @@
 ## Установка шаблона
 
 ``` sh
-$ git clone https://github.com/tsergeytovarov/grunt-project.git project-name
-$ cd project-name
-$ npm install
+$ git clone https://github.com/tsergeytovarov/grunt-project.git project && cd project
+$ npm i
 ```
 
 По окончанию выполнения будут установлены все необходимые пакеты.
@@ -21,6 +20,6 @@ $ npm install
 
 - `src/` - каталог для размещения рабочих файлов (html, sass, js, изображения)
 - `build/` - каталог для размещения готовой верстки
-- `design/` - каталог для локального хранения файлов макета.
+- `_design/` - каталог для локального хранения файлов макета.
 
 Вся работа осуществляется в каталоге `src/`.
