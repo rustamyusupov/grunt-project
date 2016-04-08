@@ -153,7 +153,7 @@ module.exports = function(grunt) {
       },
       style: {
         files: ['src/sass/**/*.scss'],
-        tasks: ['copy:style'],
+        tasks: ['style'],
         options: {
           spawn: false,
           livereload: true
@@ -161,7 +161,7 @@ module.exports = function(grunt) {
       },
       images: {
         files: ['src/img/**/*.{png,jpg,gif,svg}'],
-        tasks: ['copy:img'],
+        tasks: ['img'],
         options: {
           spawn: false,
           livereload: true
