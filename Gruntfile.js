@@ -61,6 +61,18 @@ module.exports = function(grunt) {
       }
     },
 
+    // сортировка css
+    csscomb: {
+      style: {
+        options: {
+          config: 'csscomb.json'
+        },
+        files: {
+          'build/css/style.css': ['build/css/style.css']
+        }
+      }
+    },
+
     // объединение медиа выражений
     cmq: {
       options: {
@@ -133,7 +145,7 @@ module.exports = function(grunt) {
     watch: {
       html: {
         files: ['src/**/*.html'],
-        tasks: ['htm'],
+        tasks: ['copy:htm'],
         options: {
           spawn: false,
           livereload: true
@@ -141,7 +153,7 @@ module.exports = function(grunt) {
       },
       style: {
         files: ['src/sass/**/*.scss'],
-        tasks: ['style'],
+        tasks: ['copy:style'],
         options: {
           spawn: false,
           livereload: true
@@ -149,7 +161,7 @@ module.exports = function(grunt) {
       },
       images: {
         files: ['src/img/**/*.{png,jpg,gif,svg}'],
-        tasks: ['img'],
+        tasks: ['copy:img'],
         options: {
           spawn: false,
           livereload: true
@@ -200,6 +212,7 @@ module.exports = function(grunt) {
     'sass',
     'cmq',
     'autoprefixer',
+    'csscomb',
     'cssmin',
     'concat',
     'uglify',
@@ -215,6 +228,7 @@ module.exports = function(grunt) {
     'sass',
     'cmq',
     'autoprefixer',
+    'csscomb',
     'cssmin',
     'concat',
     'uglify',
