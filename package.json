@@ -1,6 +1,6 @@
 {
   "name": "grunt-project-template",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "description": "Template for project on Grunt",
   "author": "Rustam Yusupov",
@@ -25,7 +25,6 @@
     "grunt-contrib-uglify": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-csscomb": "^3.1.0",
-    "grunt-processhtml": "^0.3.13",
     "grunt-sass": "^1.1.0",
     "load-grunt-tasks": "^3.4.1"
   },

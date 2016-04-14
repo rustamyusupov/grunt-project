@@ -9,9 +9,9 @@ module.exports = function(grunt) {
     clean: {
       build: [
         'build/css',
+        'build/fonts',
         'build/img',
-        'build/js',
-        'build/fonts'
+        'build/js'
       ]
     },
 
@@ -127,19 +127,20 @@ module.exports = function(grunt) {
       }
     },
 
-    // подключение *.min.* файлов
-    processhtml: {
-      options: {
-        data: {
-          message: 'Production distribution'
-        }
-      },
-      dist: {
-        files: {
-          'build/index.html': ['build/index.html']
-        }
-      }
-    },
+    // // подключение *.min.* файлов
+    // processhtml: {
+    //   options: {
+    //     data: {
+    //       message: 'Production distribution'
+    //     }
+    //   },
+    //   dist: {
+    //     files: {
+    //       'build/index.html': ['build/index.html']
+    //     }
+    //   }
+    // },
+    // "grunt-processhtml": "^0.3.13",
 
     // отслеживаем изменений
     watch: {
@@ -183,9 +184,9 @@ module.exports = function(grunt) {
         bsFiles: {
           src: [
             'build/css/*.css',
-            'build/js/*.js',
             'build/fonts/**',
             'build/img/**/*.{png,jpg,gif,svg}',
+            'build/js/*.js',
             'build/**/*.html'
           ]
         },
@@ -232,8 +233,7 @@ module.exports = function(grunt) {
     'cssmin',
     'concat',
     'uglify',
-    'imagemin',
-    'processhtml'
+    'imagemin'
   ]);
 
   // только стили
@@ -244,15 +244,16 @@ module.exports = function(grunt) {
     'cssmin'
   ]);
 
+  // только картики
+  grunt.registerTask('img', [
+    'copy:img',
+    'imagemin'
+  ]);
+
   // только js
   grunt.registerTask('js', [
     'concat',
     'uglify'
   ]);
 
-  // только картики и стили
-  grunt.registerTask('img', [
-    'copy:img',
-    'imagemin'
-  ]);
 };
