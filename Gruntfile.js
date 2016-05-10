@@ -127,21 +127,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // // подключение *.min.* файлов
-    // processhtml: {
-    //   options: {
-    //     data: {
-    //       message: 'Production distribution'
-    //     }
-    //   },
-    //   dist: {
-    //     files: {
-    //       'build/index.html': ['build/index.html']
-    //     }
-    //   }
-    // },
-    // "grunt-processhtml": "^0.3.13",
-
     // отслеживаем изменений
     watch: {
       html: {

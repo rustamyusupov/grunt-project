@@ -1,10 +1,10 @@
 .btn {
-  display: inline-block;
-  vertical-align: top;
   box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
   text-align: center;
   text-decoration: none;
-  cursor: pointer;
+  vertical-align: top;
 
   &:hover,
   &--hover {
